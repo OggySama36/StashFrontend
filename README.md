@@ -1,56 +1,93 @@
-# Name project
-Stash
-## Target
-upload documents to virtual folder and save on clouds
-## Project Tree(Frontend)
-frontend/
+# Stash Frontend
+
+React + Vite
+
+## Run local
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Tree
+
+```
+Stash/
 ├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+│
 ├── src/
 │   ├── assets/
+│   │   └── image-icon.png
+│   │
 │   ├── components/
-│   │   ├── ui/
-│   │   ├── FileCard/
-│   │   ├── FolderCard/
-│   │   ├── Breadcrumb/
-│   │   └── UploadProgress/
+│   │   ├── Avatar.jsx
+│   │   ├── Breadcrump.jsx
+│   │   ├── CreateFolder.jsx
+│   │   ├── FileCard.jsx
+│   │   ├── FolderCard.jsx
+│   │   ├── MenuFile.jsx
+│   │   ├── MenuFolder.jsx
+│   │   ├── Notification.jsx
+│   │   ├── Warning.jsx
+│   │   ├── share-page.jsx
+│   │   └── uploadProgress.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   ├── useFiles.js
+│   │   ├── useFolders.js
+│   │   └── useUpload.js
 │   │
 │   ├── layouts/
+│   │   ├── Header.jsx
 │   │   ├── MainLayout.jsx
-│   │   └── AuthLayout.jsx
+│   │   ├── SideBar.jsx
+│   │   └── layouts.css
 │   │
 │   ├── pages/
 │   │   ├── Auth/
+│   │   │   ├── Auth.css
 │   │   │   ├── Login.jsx
 │   │   │   └── Register.jsx
-│   │   ├── Drive/
-│   │   │   ├── index.jsx
-│   │   │   ├── Folder.jsx
-│   │   │   ├── Shared.jsx
-│   │   │   ├── Starred.jsx
-│   │   │   └── Trash.jsx
-│   │   └── Preview/
-│   │       └── FilePreview.jsx
-│   │
-│   ├── hooks/
-│   │   ├── useUpload.js
-│   │   ├── useFiles.js
-│   │   └── useAuth.js
-│   │
-│   ├── stores/
-│   │   ├── authStore.js
-│   │   ├── fileStore.js
-│   │   └── uploadStore.js
+│   │   │
+│   │   ├── Drives/
+│   │   │   ├── home.jsx
+│   │   │   ├── share.jsx
+│   │   │   ├── starred.jsx
+│   │   │   └── trash.jsx
+│   │   │
+│   │   ├── Preview/
+│   │   │   └── FilePreview.jsx
+│   │   │
+│   │   └── Profile/
+│   │       └── profile.jsx
 │   │
 │   ├── services/
 │   │   ├── api.js
-│   │   ├── fileService.js
-│   │   ├── folderService.js
-│   │   └── authService.js
+│   │   ├── authServices.js
+│   │   ├── documentsService.js
+│   │   └── downloadService.js
 │   │
 │   ├── utils/
-│   │   ├── formatBytes.js
-│   │   ├── getMimeType.js
-│   │   └── constants.js
+│   │   └── formatByte.js
 │   │
-│   └── router/
-│       └── index.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
