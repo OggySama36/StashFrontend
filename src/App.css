@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  --bg-main: rgba(23, 0, 34, 0.859);
+  --bg-surface: rgba(54, 22, 68, 0.896);
+  --bg-elevated: rgba(70, 30, 90, 0.95);
+  --canvas: #ffffff;
+  --text-primary: white;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --border: rgba(255, 255, 255, 0.15);
+  --accent: rgb(208, 0, 184);
+  --accent-hover: rgb(130, 0, 97);
+  --accent-bright: rgb(255, 55, 202);
+  --danger: rgb(200, 40, 40);
+  --danger-hover: rgb(150, 20, 20);
+  --success: rgb(70, 200, 120);
+  --hover-overlay: rgba(255, 255, 255, 0.08);
+  --scrollbar-track: rgba(0, 0, 0, 0.3);
+  --scrollbar-thumb: rgb(66, 0, 52);
+  --scrollbar-thumb-hover: rgb(207, 207, 207);
+  --primary-action: rgb(0, 153, 255);
+  --primary-action-hover: rgb(50, 50, 255);
+}
+
+.App[data-theme="Dark"]{
+  --bg-main: #0d0d0f;
+  --bg-surface: #1a1a1d;
+  --bg-elevated: #26262a;
+  --text-primary: #f2f2f2;
+  --text-secondary: rgba(242, 242, 242, 0.6);
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: rgb(208, 0, 184);
+  --accent-hover: rgb(160, 0, 140);
+  --accent-bright: rgb(255, 55, 202);
+  --danger: rgb(220, 60, 60);
+  --danger-hover: rgb(170, 40, 40);
+  --success: rgb(80, 210, 130);
+  --hover-overlay: rgba(255, 255, 255, 0.06);
+  --scrollbar-track: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.15);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+  --primary-action: rgb(0, 140, 235);
+  --primary-action-hover: rgb(40, 110, 235);
+}
+
+.App[data-theme="Light"]{
+  --bg-main: #f6f1fa;
+  --bg-surface: #ffffff;
+  --bg-elevated: #efe6f5;
+  --text-primary: #241b2e;
+  --text-secondary: rgba(36, 27, 46, 0.6);
+  --border: rgba(147, 51, 130, 0.18);
+  --accent: rgb(182, 0, 158);
+  --accent-hover: rgb(140, 0, 122);
+  --accent-bright: rgb(216, 0, 180);
+  --danger: rgb(200, 40, 60);
+  --danger-hover: rgb(160, 25, 45);
+  --success: rgb(20, 150, 90);
+  --hover-overlay: rgba(182, 0, 158, 0.08);
+  --scrollbar-track: rgba(182, 0, 158, 0.06);
+  --scrollbar-thumb: rgba(182, 0, 158, 0.25);
+  --scrollbar-thumb-hover: rgba(182, 0, 158, 0.4);
+  --primary-action: rgb(0, 120, 220);
+  --primary-action-hover: rgb(0, 90, 190);
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  overflow: hidden;
+  user-select: none;
+}
+.Auth-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg-main);
+}
+.Auth-pageload{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Auth-icon > img{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+}
+.Auth-icon > h1{
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  font-size: 24px;
+  z-index: 100;
+}
+.Auth-icon{
+  display: flex;
+  flex-direction: row;
+}
